@@ -37,7 +37,7 @@ A modern, responsive single-page website for **Vastunex Infra**, a construction 
 |---|---|
 | **Company** | Vastunex Infra |
 | **Tagline** | Building Dreams |
-| **Location** | Prayagraj, Uttar Pradesh, India |
+| **Location** | Kanpur, Uttar Pradesh, India |
 | **Contact** | 9********0 |
 
 ---
