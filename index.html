@@ -3,263 +3,422 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Vastunex Infra - Building Dreams</title>
+<!-- ✅ SEO META TAGS -->
+<title>Vastunex Infra | Construction Company in Kanpur, Unnao & Lucknow</title>
+<meta name="description" content="Vastunex Infra offers affordable home construction in Kanpur, Unnao & Lucknow. Grey structure, comfort & standard packages starting ₹1000/sq ft. Get a free quote today!">
+<meta name="keywords" content="construction company Kanpur, home builder Kanpur, building contractor Lucknow, house construction Unnao, grey structure Kanpur, construction company Lucknow, home builder Unnao, building contractor Kanpur">
+<meta name="author" content="Vastunex Infra">
+<meta name="robots" content="index, follow">
+
+<!-- Geo Targeting (Kanpur as primary city) -->
+<meta name="geo.region" content="IN-UP">
+<meta name="geo.placename" content="Kanpur, Uttar Pradesh">
+<meta name="geo.position" content="26.4499;80.3319">
+<meta name="ICBM" content="26.4499, 80.3319">
+
+<!-- Open Graph (WhatsApp / Facebook previews) -->
+<meta property="og:title" content="Vastunex Infra | Construction Company in Kanpur, Unnao & Lucknow">
+<meta property="og:description" content="Affordable home construction in Kanpur, Unnao & Lucknow. Packages from ₹1000/sq ft. Free quote available!">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://yourwebsite.com">
+<meta property="og:image" content="https://yourwebsite.com/og-image.jpg">
+<!-- ✅ END SEO META TAGS -->
+
+<title>Vastunex Infra - Building Dreams | Kanpur, UP</title>
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Barlow:wght@300;400;500;600&family=Barlow+Condensed:wght@500;700&display=swap" rel="stylesheet">
 <style>
   :root {
-    --navy: #1a2342;
-    --green: #2daa4f;
-    --yellow: #f5c518;
-    --red: #e63030;
-    --white: #ffffff;
-    --light: #f4f6fa;
-    --grey: #6b7280;
-    --dark: #0d1526;
+    --primary: #1F2937;
+    --secondary: #374151;
+    --accent: #F97316;
+    --accent-dark: #ea6c0a;
+    --accent-light: #fff7ed;
+    --bg: #FFFFFF;
+    --off-white: #F9FAFB;
+    --light: #F3F4F6;
+    --light2: #E5E7EB;
+    --grey: #6B7280;
+    --dark-text: #111827;
   }
-  * { margin: 0; padding: 0; box-sizing: border-box; }
-  html { scroll-behavior: smooth; }
-  body { font-family: 'Barlow', sans-serif; background: var(--white); color: var(--navy); overflow-x: hidden; }
-
-  nav {
-    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
-    background: var(--navy);
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html { scroll-behavior:smooth; }
+  body { font-family:'Barlow',sans-serif; background:var(--bg); color:var(--dark-text); overflow-x:hidden; }
+ 
+  /* REVEAL ANIMATIONS */
+  .reveal { opacity:0; transform:translateY(36px); transition:opacity .65s ease,transform .65s ease; }
+  .reveal.active { opacity:1; transform:translateY(0); }
+  .reveal-left { opacity:0; transform:translateX(-40px); transition:opacity .65s ease,transform .65s ease; }
+  .reveal-left.active { opacity:1; transform:translateX(0); }
+  .reveal-right { opacity:0; transform:translateX(40px); transition:opacity .65s ease,transform .65s ease; }
+  .reveal-right.active { opacity:1; transform:translateX(0); }
+  .d1{transition-delay:.08s} .d2{transition-delay:.16s} .d3{transition-delay:.24s} .d4{transition-delay:.32s} .d5{transition-delay:.4s} .d6{transition-delay:.48s}
+ 
+  /* ===== TOPBAR ===== */
+  .topbar {
+    background: var(--primary);
+    color: rgba(255,255,255,0.75);
+    padding: 7px 48px;
     display: flex; align-items: center; justify-content: space-between;
-    padding: 0 40px; height: 70px;
-    box-shadow: 0 2px 20px rgba(0,0,0,0.3);
+    font-size: 13px;
   }
-  .logo { display: flex; align-items: center; gap: 12px; text-decoration: none; }
-  .logo-icon {
-    width: 46px; height: 46px;
-    background: linear-gradient(135deg, var(--navy) 0%, #2a3a6e 100%);
-    border: 2px solid var(--green);
-    border-radius: 8px;
-    display: flex; align-items: center; justify-content: center;
+  .topbar a { color: var(--accent); text-decoration: none; }
+  .topbar-right { display: flex; gap: 24px; align-items: center; }
+ 
+  /* ===== NAV ===== */
+  nav {
+    position: sticky; top: 0; z-index: 200;
+    background: var(--bg);
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 0 48px; height: 68px;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.09);
+    transition: box-shadow .3s;
   }
-  .logo-icon svg { width: 32px; height: 32px; }
-  .logo-text { display: flex; flex-direction: column; }
-  .logo-text span:first-child {
-    font-family: 'Oswald', sans-serif; font-size: 20px; font-weight: 700;
-    color: var(--white); letter-spacing: 1px; line-height: 1;
+  .logo { display:flex; align-items:center; gap:12px; text-decoration:none; }
+  .logo-icon { width:46px; height:46px; background:var(--primary); border-radius:10px; display:flex; align-items:center; justify-content:center; }
+  .logo-icon svg { width:30px; height:30px; }
+  .logo-text span:first-child { font-family:'Oswald',sans-serif; font-size:20px; font-weight:700; color:var(--primary); letter-spacing:1px; line-height:1; display:block; }
+  .logo-text span:first-child em { color:var(--accent); font-style:normal; }
+  .logo-text span:last-child { font-size:10px; color:var(--grey); letter-spacing:3px; text-transform:uppercase; }
+ 
+  .nav-links { display:flex; align-items:center; gap:4px; list-style:none; height:68px; }
+  .nav-links > li { position:relative; height:100%; display:flex; align-items:center; }
+  .nav-links > li > a {
+    color:var(--secondary); text-decoration:none;
+    font-family:'Barlow Condensed',sans-serif; font-size:14px; font-weight:600;
+    letter-spacing:.8px; text-transform:uppercase;
+    padding: 0 14px; height:100%; display:flex; align-items:center; gap:5px;
+    transition:color .2s; position:relative; white-space:nowrap;
   }
-  .logo-text span:first-child em { color: var(--green); font-style: normal; }
-  .logo-text span:last-child {
-    font-family: 'Barlow', sans-serif; font-size: 10px; color: var(--yellow);
-    letter-spacing: 3px; text-transform: uppercase;
+  .nav-links > li > a::after { content:''; position:absolute; bottom:0; left:14px; right:14px; height:3px; background:var(--accent); transform:scaleX(0); transition:transform .25s; }
+  .nav-links > li:hover > a, .nav-links > li > a.active { color:var(--accent); }
+  .nav-links > li:hover > a::after { transform:scaleX(1); }
+ 
+  /* dropdown arrow */
+  .has-drop > a .arrow { display:inline-block; border:solid var(--grey); border-width:0 2px 2px 0; padding:3px; transform:rotate(45deg); transition:transform .2s,border-color .2s; margin-top:-2px; }
+  .has-drop:hover > a .arrow { transform:rotate(-135deg); border-color:var(--accent); }
+ 
+  /* DROPDOWN */
+  .dropdown {
+    position:absolute; top:100%; left:0;
+    background:var(--bg);
+    border:1px solid var(--light2);
+    border-top:3px solid var(--accent);
+    border-radius:0 0 10px 10px;
+    box-shadow:0 12px 40px rgba(0,0,0,0.12);
+    min-width:210px;
+    opacity:0; visibility:hidden; transform:translateY(8px);
+    transition:opacity .2s, transform .2s, visibility .2s;
+    z-index:300;
   }
-  .nav-links { display: flex; align-items: center; gap: 32px; list-style: none; }
-  .nav-links a {
-    color: rgba(255,255,255,0.85); text-decoration: none;
-    font-family: 'Barlow Condensed', sans-serif; font-size: 15px; font-weight: 500;
-    letter-spacing: 1px; text-transform: uppercase;
-    transition: color 0.2s;
+  .has-drop:hover .dropdown { opacity:1; visibility:visible; transform:translateY(0); }
+  .dropdown li { list-style:none; }
+  .dropdown li a {
+    display:flex; align-items:center; gap:10px;
+    padding:11px 18px;
+    font-family:'Barlow',sans-serif; font-size:14px; color:var(--secondary);
+    text-decoration:none; transition:background .15s,color .15s;
+    border-bottom:1px solid var(--light);
   }
-  .nav-links a:hover { color: var(--yellow); }
-  .nav-cta {
-    background: var(--green); color: var(--white); padding: 10px 22px;
-    border-radius: 4px; text-decoration: none;
-    font-family: 'Barlow Condensed', sans-serif; font-size: 14px; font-weight: 600;
-    letter-spacing: 1px; text-transform: uppercase;
-    transition: background 0.2s; white-space: nowrap;
-  }
-  .nav-cta:hover { background: #25913f; }
+  .dropdown li:last-child a { border-bottom:none; }
+  .dropdown li a:hover { background:var(--accent-light); color:var(--accent); padding-left:24px; }
+  .dropdown li a .di { font-size:16px; flex-shrink:0; }
+ 
+  .nav-cta { background:var(--accent); color:var(--bg); padding:10px 22px; border-radius:6px; text-decoration:none; font-family:'Barlow Condensed',sans-serif; font-size:14px; font-weight:700; letter-spacing:1px; text-transform:uppercase; transition:background .2s,transform .2s; white-space:nowrap; margin-left:10px; }
+  .nav-cta:hover { background:var(--accent-dark); transform:translateY(-1px); }
+ 
+  /* HERO */
+  .hero { min-height:100vh; position:relative; overflow:hidden; display:flex; align-items:center; }
+  .hero-bg { position:absolute; inset:0; z-index:0; background:url('https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=1600&q=80') center/cover no-repeat; }
+  .hero-overlay { position:absolute; inset:0; z-index:1; background:linear-gradient(110deg,rgba(31,41,55,0.96) 0%,rgba(31,41,55,0.82) 55%,rgba(31,41,55,0.55) 100%); }
+  .hero-content { position:relative; z-index:2; max-width:1100px; margin:0 auto; padding:80px 48px; display:grid; grid-template-columns:1.1fr 0.9fr; gap:60px; align-items:center; width:100%; }
+  .hero-eyebrow { display:inline-flex; align-items:center; gap:8px; background:rgba(249,115,22,0.15); border:1px solid rgba(249,115,22,0.4); color:#fdba74; padding:6px 16px; border-radius:100px; font-size:12px; font-weight:600; letter-spacing:2px; text-transform:uppercase; margin-bottom:20px; animation:hFade .7s .1s both; }
+  .hero-title { font-family:'Oswald',sans-serif; font-size:clamp(40px,5.5vw,70px); font-weight:700; line-height:1.04; color:#fff; margin-bottom:18px; animation:hFade .7s .2s both; }
+  .hero-title span { color:var(--accent); }
+  .hero-tagline { font-size:17px; color:rgba(255,255,255,.78); margin-bottom:14px; font-weight:300; animation:hFade .7s .3s both; }
+  .hero-banner { background:var(--accent); color:#fff; padding:10px 20px; display:inline-block; margin-bottom:32px; font-family:'Oswald',sans-serif; font-size:13px; font-weight:600; letter-spacing:2px; text-transform:uppercase; border-radius:4px; animation:hFade .7s .4s both; }
+  .hero-btns { display:flex; gap:14px; flex-wrap:wrap; animation:hFade .7s .5s both; }
+  .btn-primary { background:var(--accent); color:#fff; padding:14px 32px; border-radius:6px; text-decoration:none; font-family:'Barlow Condensed',sans-serif; font-size:15px; font-weight:700; letter-spacing:1.5px; text-transform:uppercase; transition:background .2s,transform .2s; display:inline-flex; align-items:center; gap:8px; }
+  .btn-primary:hover { background:var(--accent-dark); transform:translateY(-2px); }
+  .btn-outline { border:2px solid rgba(255,255,255,.55); color:#fff; padding:12px 28px; border-radius:6px; text-decoration:none; font-family:'Barlow Condensed',sans-serif; font-size:15px; font-weight:700; letter-spacing:1.5px; text-transform:uppercase; transition:all .2s; }
+  .btn-outline:hover { background:rgba(255,255,255,.12); border-color:#fff; }
+  .hero-stats { display:grid; grid-template-columns:1fr 1fr; gap:16px; animation:hFade .7s .25s both; }
+  .hstat { background:rgba(255,255,255,.08); backdrop-filter:blur(8px); border:1px solid rgba(255,255,255,.15); border-radius:14px; padding:24px 18px; text-align:center; transition:background .2s; }
+  .hstat:hover { background:rgba(249,115,22,.15); border-color:rgba(249,115,22,.4); }
+  .hstat.wide { grid-column:span 2; background:rgba(249,115,22,.18); border-color:rgba(249,115,22,.4); }
+  .hstat-num { font-family:'Oswald',sans-serif; font-size:40px; font-weight:700; color:#fff; line-height:1; }
+  .hstat-num em { color:var(--accent); font-style:normal; }
+  .hstat-label { font-size:12px; color:rgba(255,255,255,.65); margin-top:6px; letter-spacing:1.5px; text-transform:uppercase; }
+  .hstat.wide .hstat-num { font-size:19px; }
+  .hstat.wide .hstat-label { font-size:13px; color:rgba(255,255,255,.85); }
+  @keyframes hFade { from{opacity:0;transform:translateY(24px)} to{opacity:1;transform:translateY(0)} }
+ 
+  /* PHONE BAR */
+  .phone-bar { background:var(--primary); color:rgba(255,255,255,.8); display:flex; justify-content:center; align-items:center; gap:36px; padding:15px 40px; flex-wrap:wrap; }
+  .phone-item { display:flex; align-items:center; gap:9px; }
+  .phone-item svg { color:var(--accent); flex-shrink:0; }
+  .phone-item a { color:#fff; text-decoration:none; font-family:'Oswald',sans-serif; font-size:17px; letter-spacing:1px; transition:color .2s; }
+  .phone-item a:hover { color:var(--accent); }
+  .phone-div { width:1px; height:26px; background:rgba(255,255,255,.2); }
+ 
+  /* GALLERY STRIP */
+  .gallery-strip { overflow:hidden; background:var(--primary); }
+  .gallery-track { display:flex; animation:gscroll 32s linear infinite; width:max-content; }
+  .gallery-track:hover { animation-play-state:paused; }
+  .gallery-img { width:320px; height:200px; object-fit:cover; opacity:.8; transition:opacity .3s; flex-shrink:0; border-right:3px solid var(--primary); }
+  .gallery-img:hover { opacity:1; }
+  @keyframes gscroll { 0%{transform:translateX(0)} 100%{transform:translateX(-50%)} }
+ 
+  /* SECTION COMMON */
+  .section-label { font-family:'Barlow Condensed',sans-serif; font-size:12px; font-weight:700; letter-spacing:4px; text-transform:uppercase; color:var(--accent); margin-bottom:10px; display:flex; align-items:center; gap:10px; }
+  .section-label::before { content:''; display:block; width:26px; height:3px; background:var(--accent); flex-shrink:0; }
+  .section-title { font-family:'Oswald',sans-serif; font-size:clamp(26px,3.5vw,42px); font-weight:700; color:var(--primary); margin-bottom:12px; }
+  .section-title span { color:var(--accent); }
+  .section-sub { font-size:15px; color:var(--grey); line-height:1.7; max-width:540px; margin-bottom:46px; }
+  .max-w { max-width:1100px; margin:0 auto; }
+ 
+  /* SERVICES */
+  .services { padding:88px 48px; background:var(--off-white); }
+  .services-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:22px; }
+  .service-card { background:var(--bg); border-radius:12px; padding:30px 26px; border:1.5px solid var(--light2); transition:transform .25s,box-shadow .25s,border-color .25s; position:relative; overflow:hidden; }
+  .service-card::before { content:''; position:absolute; top:0; left:0; right:0; height:4px; background:linear-gradient(90deg,var(--accent),var(--accent-dark)); transform:scaleX(0); transform-origin:left; transition:transform .3s; }
+  .service-card:hover { transform:translateY(-6px); box-shadow:0 16px 40px rgba(31,41,55,.1); border-color:rgba(249,115,22,.3); }
+  .service-card:hover::before { transform:scaleX(1); }
+  .svc-icon { width:54px; height:54px; border-radius:10px; background:var(--accent-light); display:flex; align-items:center; justify-content:center; margin-bottom:16px; font-size:24px; border:1px solid #fed7aa; }
+  .svc-title { font-family:'Oswald',sans-serif; font-size:19px; font-weight:600; margin-bottom:8px; color:var(--primary); }
+  .svc-desc { font-size:13px; color:var(--grey); line-height:1.7; }
+ 
+  /* PROJECTS */
+  .projects-section { padding:88px 48px; background:var(--light); }
+  .projects-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:16px; }
+  .proj-item { border-radius:12px; overflow:hidden; position:relative; cursor:pointer; }
+  .proj-item.big { grid-column:span 2; grid-row:span 2; }
+  .proj-item img { width:100%; height:100%; object-fit:cover; transition:transform .4s; display:block; }
+  .proj-item:hover img { transform:scale(1.05); }
+  .proj-overlay { position:absolute; inset:0; background:linear-gradient(to top,rgba(31,41,55,.85) 0%,transparent 60%); opacity:0; transition:opacity .3s; display:flex; align-items:flex-end; padding:20px; }
+  .proj-item:hover .proj-overlay { opacity:1; }
+  .proj-label { color:#fff; font-family:'Oswald',sans-serif; font-size:16px; font-weight:600; }
+  .proj-accent { display:inline-block; background:var(--accent); padding:2px 10px; border-radius:4px; font-size:11px; font-family:'Barlow Condensed',sans-serif; letter-spacing:1px; text-transform:uppercase; color:#fff; margin-bottom:5px; }
+ 
+  /* STATS */
+  .stats-section { padding:60px 48px; background:var(--primary); }
+  .stats-inner { max-width:1100px; margin:0 auto; display:grid; grid-template-columns:repeat(4,1fr); gap:22px; }
+  .stat-box { text-align:center; padding:30px 20px; border-radius:12px; background:rgba(255,255,255,.06); border:1px solid rgba(255,255,255,.1); transition:background .2s,border-color .2s; }
+  .stat-box:hover { background:rgba(249,115,22,.15); border-color:rgba(249,115,22,.4); }
+  .stat-box .num { font-family:'Oswald',sans-serif; font-size:50px; font-weight:700; color:#fff; line-height:1; }
+  .stat-box .num em { color:var(--accent); font-style:normal; }
+  .stat-box .lbl { font-size:12px; color:rgba(255,255,255,.6); letter-spacing:2px; text-transform:uppercase; margin-top:8px; }
+ 
+  /* PACKAGES */
+  .packages { padding:88px 48px; background:var(--off-white); }
+  .packages-intro { text-align:center; margin-bottom:50px; }
+  .packages-intro .section-label { justify-content:center; }
+  .packages-intro .section-label::before { display:none; }
+  .packages-intro .section-sub { margin:0 auto; }
+  .pkg-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:26px; max-width:1100px; margin:0 auto; }
+  .pkg-card { border-radius:16px; overflow:hidden; border:2px solid var(--light2); display:flex; flex-direction:column; transition:transform .28s,box-shadow .28s; background:var(--bg); }
+  .pkg-card:hover { transform:translateY(-10px); box-shadow:0 28px 60px rgba(31,41,55,.12); }
+  .pkg-card.featured { border-color:var(--accent); box-shadow:0 8px 32px rgba(249,115,22,.18); }
+  .pkg-badge { position:absolute; top:16px; right:16px; background:var(--accent); color:#fff; font-family:'Oswald',sans-serif; font-size:11px; font-weight:700; letter-spacing:1.5px; text-transform:uppercase; padding:4px 12px; border-radius:100px; }
+  .pkg-header { padding:30px 26px 22px; position:relative; }
+  .pkg-card:nth-child(1) .pkg-header { background:linear-gradient(135deg,#2d3e52,#1F2937); }
+  .pkg-card:nth-child(2) .pkg-header { background:linear-gradient(135deg,var(--accent),var(--accent-dark)); }
+  .pkg-card:nth-child(3) .pkg-header { background:linear-gradient(135deg,#111827,#1F2937); }
+  .pkg-icon { font-size:30px; margin-bottom:12px; }
+  .pkg-name { font-family:'Oswald',sans-serif; font-size:22px; font-weight:700; color:#fff; margin-bottom:4px; }
+  .pkg-tagline { font-size:13px; color:rgba(255,255,255,.7); margin-bottom:14px; }
+  .pkg-price { font-family:'Oswald',sans-serif; font-size:34px; font-weight:700; color:#fff; line-height:1; }
+  .pkg-price em { font-style:normal; font-size:14px; color:rgba(255,255,255,.65); font-family:'Barlow',sans-serif; font-weight:400; }
+  .pkg-card:nth-child(2) .pkg-price { color:#1F2937; }
+  .pkg-card:nth-child(2) .pkg-price em { color:rgba(31,41,55,.65); }
+  .pkg-body { padding:22px 26px; flex:1; }
+  .pkg-summary { font-size:13px; color:var(--grey); line-height:1.7; margin-bottom:16px; padding-bottom:16px; border-bottom:1px solid var(--light2); font-style:italic; }
+  .pkg-section-title { font-family:'Barlow Condensed',sans-serif; font-size:11px; font-weight:700; letter-spacing:2px; text-transform:uppercase; color:var(--accent); margin:14px 0 7px; }
+  .pkg-list { list-style:none; display:flex; flex-direction:column; gap:5px; }
+  .pkg-list li { font-size:13px; color:#374151; display:flex; align-items:flex-start; gap:8px; line-height:1.5; }
+  .pkg-list li::before { content:'✓'; color:var(--accent); font-weight:700; font-size:12px; margin-top:1px; flex-shrink:0; }
+  .pkg-list.excluded li::before { content:'✗'; color:#e74c3c; }
+  .pkg-list.excluded li { color:#9ca3af; text-decoration:line-through; }
+  .pkg-footer { padding:16px 26px 26px; }
+  .pkg-cta { display:block; text-align:center; background:var(--primary); color:#fff; padding:13px; border-radius:8px; text-decoration:none; font-family:'Barlow Condensed',sans-serif; font-size:15px; font-weight:700; letter-spacing:1.5px; text-transform:uppercase; transition:background .2s,transform .15s; }
+  .pkg-card.featured .pkg-cta { background:var(--accent); }
+  .pkg-cta:hover { opacity:.88; transform:scale(1.02); }
+ 
+  /* COMPARISON */
+  .comparison { padding:70px 48px; background:var(--light); }
+  .comparison-table-wrap { overflow-x:auto; max-width:1100px; margin:0 auto; border-radius:12px; box-shadow:0 4px 30px rgba(31,41,55,.08); }
+  table { width:100%; border-collapse:collapse; background:var(--bg); }
+  thead th { padding:18px 20px; font-family:'Oswald',sans-serif; font-size:16px; font-weight:600; text-align:center; }
+  thead th:first-child { text-align:left; background:var(--primary); color:#fff; }
+  thead th:nth-child(2) { background:var(--secondary); color:#fff; }
+  thead th:nth-child(3) { background:var(--accent); color:#fff; }
+  thead th:nth-child(4) { background:#111827; color:var(--accent); }
+  tbody tr { transition:background .15s; }
+  tbody tr:nth-child(even) { background:#f9fafb; }
+  tbody tr:hover { background:#fff7ed; }
+  tbody td { padding:13px 20px; font-size:14px; border-bottom:1px solid #edf0f3; }
+  tbody td:first-child { font-weight:600; color:var(--primary); }
+  tbody td:not(:first-child) { text-align:center; }
+  .yes { color:var(--accent); font-size:18px; font-weight:700; }
+  .no { color:#cbd5e1; font-size:18px; }
+  .partial { color:var(--primary); font-size:13px; font-weight:500; }
 
-  .hero {
-    min-height: 100vh;
-    background: var(--navy);
-    position: relative; overflow: hidden;
-    display: flex; align-items: center;
-    padding-top: 70px;
+  /* CAMERA TRUST SECTION */
+  .camera-section { padding: 80px 48px; background: var(--primary); position: relative; overflow: hidden; }
+  .camera-section::before { content: ''; position: absolute; top: -80px; right: -80px; width: 400px; height: 400px; background: radial-gradient(circle, rgba(249,115,22,0.12) 0%, transparent 70%); pointer-events: none; }
+  .camera-section::after { content: ''; position: absolute; bottom: -60px; left: -60px; width: 300px; height: 300px; background: radial-gradient(circle, rgba(249,115,22,0.08) 0%, transparent 70%); pointer-events: none; }
+  .camera-inner { display: grid; grid-template-columns: 0.55fr 1fr; gap: 70px; align-items: center; position: relative; z-index: 1; }
+ 
+  /* Left side — animated cam icon */
+  .camera-left { display: flex; align-items: center; justify-content: center; }
+  .cam-icon-wrap { position: relative; width: 180px; height: 180px; display: flex; align-items: center; justify-content: center; }
+  .cam-pulse-ring { position: absolute; inset: 0; border-radius: 50%; border: 2px solid rgba(249,115,22,0.4); animation: camPulse 2.4s ease-out infinite; }
+  .cam-pulse-ring.delay { animation-delay: 1.2s; }
+  .cam-icon { width: 120px; height: 120px; background: var(--accent); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 48px; box-shadow: 0 0 0 12px rgba(249,115,22,0.15), 0 0 0 24px rgba(249,115,22,0.08); animation: camBob 3s ease-in-out infinite; z-index: 1; }
+  @keyframes camPulse { 0%{transform:scale(0.8);opacity:1} 100%{transform:scale(1.8);opacity:0} }
+  @keyframes camBob { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-10px)} }
+ 
+  /* Right side */
+  .cam-eyebrow { display: inline-flex; align-items: center; gap: 8px; background: rgba(249,115,22,0.15); border: 1px solid rgba(249,115,22,0.4); color: #fdba74; padding: 6px 16px; border-radius: 100px; font-size: 12px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 18px; }
+  .cam-title { font-family: 'Oswald', sans-serif; font-size: clamp(28px, 3.5vw, 44px); font-weight: 700; color: #fff; line-height: 1.1; margin-bottom: 16px; }
+  .cam-title span { color: var(--accent); }
+  .cam-desc { font-size: 15px; color: rgba(255,255,255,0.72); line-height: 1.8; margin-bottom: 28px; }
+  .cam-desc strong { color: #fff; }
+ 
+  .cam-features { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-bottom: 28px; }
+  .cam-feat { display: flex; align-items: flex-start; gap: 12px; background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 14px 16px; transition: background .2s, border-color .2s; }
+  .cam-feat:hover { background: rgba(249,115,22,0.12); border-color: rgba(249,115,22,0.35); }
+  .cam-feat-icon { font-size: 22px; flex-shrink: 0; margin-top: 1px; }
+  .cam-feat-text strong { display: block; font-size: 13px; font-weight: 700; color: #fff; margin-bottom: 3px; }
+  .cam-feat-text span { font-size: 12px; color: rgba(255,255,255,0.58); line-height: 1.5; }
+ 
+  .cam-badge-row { display: flex; gap: 12px; flex-wrap: wrap; }
+  .cam-badge { display: inline-flex; align-items: center; gap: 6px; background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); color: rgba(255,255,255,0.85); padding: 9px 18px; border-radius: 6px; font-family: 'Barlow Condensed', sans-serif; font-size: 14px; font-weight: 600; letter-spacing: .5px; }
+  .cam-badge.accent { background: var(--accent); border-color: var(--accent); color: #fff; }
+ 
+  @media(max-width:900px) { .camera-inner { grid-template-columns: 1fr; gap: 40px; } .camera-left { display: none; } }
+  @media(max-width:600px) { .cam-features { grid-template-columns: 1fr; } .camera-section { padding: 60px 20px; } }
+ 
+  /* ABOUT */
+  .about { padding:88px 48px; background:var(--off-white); }
+  .about-inner { max-width:1100px; margin:0 auto; display:grid; grid-template-columns:1fr 1fr; gap:70px; align-items:center; }
+  .about-img-wrap { position:relative; }
+  .about-main-img { width:100%; height:380px; object-fit:cover; border-radius:14px; display:block; }
+  .about-badge { position:absolute; bottom:-20px; right:-20px; background:var(--accent); color:#fff; border-radius:12px; padding:20px 22px; text-align:center; box-shadow:0 8px 24px rgba(249,115,22,.35); }
+  .about-badge .num { font-family:'Oswald',sans-serif; font-size:38px; font-weight:700; line-height:1; }
+  .about-badge .lbl { font-size:11px; opacity:.9; letter-spacing:1px; margin-top:4px; }
+  .about-badge2 { position:absolute; top:-20px; left:-20px; background:var(--primary); color:#fff; border-radius:12px; padding:16px 18px; text-align:center; box-shadow:0 8px 24px rgba(31,41,55,.3); }
+  .about-badge2 .num { font-family:'Oswald',sans-serif; font-size:30px; font-weight:700; line-height:1; color:var(--accent); }
+  .about-badge2 .lbl { font-size:11px; opacity:.75; letter-spacing:1px; margin-top:4px; }
+  .about-tag { background:var(--accent); color:#fff; padding:8px 16px; display:inline-block; font-family:'Oswald',sans-serif; font-size:12px; font-weight:600; letter-spacing:2px; text-transform:uppercase; border-radius:4px; margin-bottom:18px; }
+  .about-content p { font-size:15px; color:var(--grey); line-height:1.8; margin-bottom:16px; }
+  .features-grid { display:grid; grid-template-columns:1fr 1fr; gap:14px; margin-top:24px; }
+  .feature-item { display:flex; align-items:flex-start; gap:12px; padding:14px; background:var(--light); border-radius:10px; border:1px solid var(--light2); transition:border-color .2s,background .2s; }
+  .feature-item:hover { border-color:rgba(249,115,22,.4); background:var(--accent-light); }
+  .feature-icon { font-size:20px; margin-top:2px; }
+  .feature-text strong { font-size:13px; font-weight:700; display:block; margin-bottom:2px; color:var(--primary); }
+  .feature-text span { font-size:12px; color:var(--grey); }
+ 
+  /* REVIEWS */
+  .reviews { padding:88px 48px; background:var(--light); }
+  .reviews-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(280px,1fr)); gap:20px; max-width:1100px; margin:0 auto; }
+  .review-card { background:var(--bg); border-radius:12px; overflow:hidden; border:1.5px solid var(--light2); transition:transform .25s,box-shadow .25s; }
+  .review-card:hover { transform:translateY(-6px); box-shadow:0 16px 40px rgba(31,41,55,.1); }
+  .review-img-wrap { position:relative; overflow:hidden; background:var(--light); }
+  .review-img-wrap img { width:100%; display:block; transition:transform .4s; }
+  .review-img-wrap:hover img { transform:scale(1.04); }
+  .review-google-badge { position:absolute; top:10px; left:10px; background:#fff; border-radius:6px; padding:4px 8px; display:flex; align-items:center; gap:5px; font-size:11px; font-weight:700; color:#4285f4; box-shadow:0 2px 8px rgba(0,0,0,.15); }
+  .review-body { padding:14px 16px; }
+  .review-stars { color:#fbbc04; font-size:15px; margin-bottom:5px; letter-spacing:1px; }
+  .review-name { font-family:'Oswald',sans-serif; font-size:16px; font-weight:600; color:var(--primary); margin-bottom:4px; }
+  .review-text { font-size:13px; color:var(--grey); line-height:1.6; }
+  .review-upload-card { background:var(--bg); border-radius:12px; border:2px dashed var(--light2); display:flex; flex-direction:column; align-items:center; justify-content:center; padding:40px 20px; text-align:center; cursor:pointer; transition:border-color .2s,background .2s; min-height:220px; }
+  .review-upload-card:hover { border-color:var(--accent); background:var(--accent-light); }
+  .review-upload-card input[type=file] { display:none; }
+  .upload-icon { font-size:34px; margin-bottom:10px; }
+  .review-upload-card p { font-size:13px; color:var(--grey); line-height:1.6; }
+  .review-upload-card strong { color:var(--accent); }
+  #preview-container { display:grid; grid-template-columns:repeat(auto-fill,minmax(280px,1fr)); gap:20px; max-width:1100px; margin:20px auto 0; }
+  .preview-card { background:var(--bg); border-radius:12px; overflow:hidden; border:1.5px solid var(--light2); position:relative; }
+  .preview-card img { width:100%; display:block; }
+  .preview-card .remove-btn { position:absolute; top:8px; right:8px; background:#e74c3c; color:#fff; border:none; border-radius:50%; width:26px; height:26px; cursor:pointer; font-size:14px; display:flex; align-items:center; justify-content:center; }
+ 
+  /* CONTACT */
+  .contact-section { background:var(--primary); padding:80px 48px; }
+  .contact-inner { max-width:1100px; margin:0 auto; display:grid; grid-template-columns:1fr 1fr; gap:60px; }
+  .contact-info .section-label { color:#fdba74; }
+  .contact-info .section-label::before { background:#fdba74; }
+  .contact-info .section-title { color:#fff; }
+  .contact-info .section-title span { color:var(--accent); }
+  .contact-info p { color:rgba(255,255,255,.65); font-size:15px; line-height:1.8; margin-bottom:28px; }
+  .contact-cards { display:flex; flex-direction:column; gap:12px; }
+  .contact-card { background:rgba(255,255,255,.07); border:1px solid rgba(255,255,255,.12); border-radius:10px; padding:15px 18px; display:flex; align-items:center; gap:14px; transition:background .2s; }
+  .contact-card:hover { background:rgba(249,115,22,.15); border-color:rgba(249,115,22,.3); }
+  .contact-card-icon { width:42px; height:42px; border-radius:8px; background:var(--accent); display:flex; align-items:center; justify-content:center; font-size:18px; flex-shrink:0; }
+  .contact-card-text strong { color:#fff; font-size:15px; display:block; }
+  .contact-card-text span { color:rgba(255,255,255,.5); font-size:13px; }
+  .contact-form { background:var(--bg); border-radius:16px; padding:36px; box-shadow:0 10px 40px rgba(0,0,0,.18); }
+  .contact-form h3 { font-family:'Oswald',sans-serif; font-size:24px; color:var(--primary); margin-bottom:22px; }
+  .form-row { display:grid; grid-template-columns:1fr 1fr; gap:14px; }
+  .form-group { margin-bottom:14px; }
+  .form-group label { display:block; font-size:12px; font-weight:700; color:var(--primary); margin-bottom:6px; letter-spacing:.5px; text-transform:uppercase; }
+  .form-group input,.form-group select,.form-group textarea { width:100%; padding:11px 14px; border:1.5px solid var(--light2); border-radius:8px; font-family:'Barlow',sans-serif; font-size:14px; color:var(--dark-text); transition:border-color .2s,box-shadow .2s; background:var(--off-white); outline:none; }
+  .form-group input:focus,.form-group select:focus,.form-group textarea:focus { border-color:var(--accent); box-shadow:0 0 0 3px rgba(249,115,22,.12); background:#fff; }
+  .form-group textarea { resize:vertical; min-height:88px; }
+  .form-submit { width:100%; background:var(--accent); color:#fff; border:none; padding:14px; border-radius:8px; cursor:pointer; font-family:'Oswald',sans-serif; font-size:17px; font-weight:600; letter-spacing:2px; text-transform:uppercase; transition:background .2s,transform .2s; margin-top:4px; }
+  .form-submit:hover { background:var(--accent-dark); transform:translateY(-1px); }
+ 
+  /* FOOTER */
+  footer { background:#111827; color:rgba(255,255,255,.45); padding:28px 40px; text-align:center; font-size:13px; }
+  footer strong { color:var(--accent); }
+ 
+  /* WHATSAPP */
+  .wa-btn { position:fixed; bottom:24px; right:24px; z-index:999; background:#25d366; color:#fff; padding:13px 20px; border-radius:50px; text-decoration:none; display:flex; align-items:center; gap:10px; font-family:'Barlow',sans-serif; font-size:14px; font-weight:600; box-shadow:0 4px 20px rgba(37,211,102,.4); animation:waPulse 2.5s infinite; }
+  @keyframes waPulse { 0%,100%{box-shadow:0 4px 20px rgba(37,211,102,.4)} 50%{box-shadow:0 8px 32px rgba(37,211,102,.65)} }
+ 
+  /* RESPONSIVE */
+  @media(max-width:960px) {
+    .pkg-grid { grid-template-columns:1fr; }
+    .projects-grid { grid-template-columns:1fr 1fr; }
+    .proj-item.big { grid-column:span 2; grid-row:span 1; }
+    .stats-inner { grid-template-columns:repeat(2,1fr); }
+    .hero-content { grid-template-columns:1fr; gap:40px; }
+    .about-inner { grid-template-columns:1fr; gap:40px; }
+    .contact-inner { grid-template-columns:1fr; }
   }
-  .hero-bg {
-    position: absolute; inset: 0;
-    background: linear-gradient(135deg, rgba(26,35,66,0.97) 0%, rgba(13,21,38,0.85) 50%, rgba(26,35,66,0.6) 100%);
-    z-index: 1;
-  }
-  .hero-pattern {
-    position: absolute; inset: 0; z-index: 0;
-    background-image:
-      repeating-linear-gradient(0deg, transparent, transparent 60px, rgba(45,170,79,0.04) 60px, rgba(45,170,79,0.04) 61px),
-      repeating-linear-gradient(90deg, transparent, transparent 60px, rgba(45,170,79,0.04) 60px, rgba(45,170,79,0.04) 61px);
-  }
-  .hero-accent {
-    position: absolute; right: -100px; top: 50%; transform: translateY(-50%);
-    width: 600px; height: 600px;
-    background: radial-gradient(circle, rgba(45,170,79,0.15) 0%, transparent 70%);
-    z-index: 0;
-  }
-  .hero-content {
-    position: relative; z-index: 2;
-    max-width: 1100px; margin: 0 auto; padding: 0 40px;
-    display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center;
-  }
-  .hero-badge {
-    display: inline-flex; align-items: center; gap: 8px;
-    background: rgba(45,170,79,0.15); border: 1px solid rgba(45,170,79,0.4);
-    color: var(--green); padding: 6px 16px; border-radius: 100px;
-    font-size: 12px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase;
-    margin-bottom: 24px;
-    animation: fadeUp 0.6s ease both;
-  }
-  .hero-badge::before { content: '●'; font-size: 8px; }
-  .hero-title {
-    font-family: 'Oswald', sans-serif; font-size: clamp(40px, 5vw, 68px);
-    font-weight: 700; line-height: 1.05; color: var(--white);
-    margin-bottom: 20px;
-    animation: fadeUp 0.6s 0.1s ease both;
-  }
-  .hero-title span { color: var(--green); }
-  .hero-tagline {
-    font-size: 18px; color: rgba(255,255,255,0.7); margin-bottom: 16px;
-    font-weight: 300; letter-spacing: 0.5px;
-    animation: fadeUp 0.6s 0.2s ease both;
-  }
-  .hero-banner {
-    background: var(--red); color: var(--yellow);
-    padding: 10px 20px; display: inline-block; margin-bottom: 32px;
-    font-family: 'Oswald', sans-serif; font-size: 14px; font-weight: 600;
-    letter-spacing: 2px; text-transform: uppercase;
-    animation: fadeUp 0.6s 0.3s ease both;
-  }
-  .hero-btns {
-    display: flex; gap: 14px; flex-wrap: wrap;
-    animation: fadeUp 0.6s 0.4s ease both;
-  }
-  .btn-primary {
-    background: var(--green); color: var(--white); padding: 14px 32px;
-    border-radius: 4px; text-decoration: none;
-    font-family: 'Barlow Condensed', sans-serif; font-size: 15px; font-weight: 600;
-    letter-spacing: 1.5px; text-transform: uppercase;
-    transition: background 0.2s, transform 0.2s;
-    display: inline-flex; align-items: center; gap: 8px;
-  }
-  .btn-primary:hover { background: #25913f; transform: translateY(-2px); }
-  .btn-outline {
-    border: 2px solid rgba(255,255,255,0.4); color: var(--white); padding: 12px 28px;
-    border-radius: 4px; text-decoration: none;
-    font-family: 'Barlow Condensed', sans-serif; font-size: 15px; font-weight: 600;
-    letter-spacing: 1.5px; text-transform: uppercase;
-    transition: border-color 0.2s, background 0.2s;
-  }
-  .btn-outline:hover { border-color: var(--white); background: rgba(255,255,255,0.08); }
-  .hero-right { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; animation: fadeUp 0.6s 0.2s ease both; }
-  .stat-card {
-    background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1);
-    border-radius: 12px; padding: 24px 20px; text-align: center;
-    transition: background 0.2s, border-color 0.2s;
-  }
-  .stat-card:hover { background: rgba(45,170,79,0.1); border-color: rgba(45,170,79,0.3); }
-  .stat-card.accent { background: var(--green); border-color: var(--green); grid-column: span 2; }
-  .stat-num { font-family: 'Oswald', sans-serif; font-size: 42px; font-weight: 700; color: var(--white); line-height: 1; }
-  .stat-num span { color: var(--yellow); }
-  .stat-label { font-size: 13px; color: rgba(255,255,255,0.65); margin-top: 6px; letter-spacing: 1px; text-transform: uppercase; }
-  .stat-card.accent .stat-num { font-size: 28px; }
-  .stat-card.accent .stat-label { color: rgba(255,255,255,0.9); font-size: 14px; }
-
-  .phone-bar {
-    background: var(--dark); color: var(--white);
-    display: flex; justify-content: center; align-items: center; gap: 40px;
-    padding: 18px 40px; flex-wrap: wrap;
-  }
-  .phone-item { display: flex; align-items: center; gap: 10px; }
-  .phone-item svg { color: var(--green); }
-  .phone-item span { font-family: 'Oswald', sans-serif; font-size: 18px; letter-spacing: 1px; }
-  .phone-div { width: 1px; height: 30px; background: rgba(255,255,255,0.15); }
-
-  .services { padding: 90px 40px; background: var(--light); }
-  .section-label {
-    font-family: 'Barlow Condensed', sans-serif; font-size: 13px;
-    font-weight: 600; letter-spacing: 4px; text-transform: uppercase;
-    color: var(--green); margin-bottom: 12px;
-    display: flex; align-items: center; gap: 10px;
-  }
-  .section-label::before { content: ''; display: block; width: 30px; height: 2px; background: var(--green); }
-  .section-title { font-family: 'Oswald', sans-serif; font-size: clamp(28px, 4vw, 46px); font-weight: 700; color: var(--navy); margin-bottom: 14px; }
-  .section-title span { color: var(--green); }
-  .section-sub { font-size: 16px; color: var(--grey); max-width: 500px; margin-bottom: 50px; }
-  .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 24px; max-width: 1100px; margin: 0 auto; }
-  .service-card {
-    background: var(--white); border-radius: 12px; padding: 32px 28px;
-    border: 1px solid rgba(0,0,0,0.07);
-    transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
-    position: relative; overflow: hidden;
-  }
-  .service-card::after {
-    content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 3px;
-    background: var(--green); transform: scaleX(0); transform-origin: left;
-    transition: transform 0.3s;
-  }
-  .service-card:hover { transform: translateY(-6px); box-shadow: 0 16px 40px rgba(0,0,0,0.1); border-color: rgba(45,170,79,0.2); }
-  .service-card:hover::after { transform: scaleX(1); }
-  .svc-icon { width: 56px; height: 56px; border-radius: 12px; background: linear-gradient(135deg, rgba(45,170,79,0.12), rgba(45,170,79,0.06)); display: flex; align-items: center; justify-content: center; margin-bottom: 20px; font-size: 26px; }
-  .svc-title { font-family: 'Oswald', sans-serif; font-size: 20px; font-weight: 600; margin-bottom: 10px; }
-  .svc-desc { font-size: 14px; color: var(--grey); line-height: 1.7; }
-
-  .about { padding: 90px 40px; max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 70px; align-items: center; }
-  .about-img-box { background: var(--navy); border-radius: 16px; padding: 40px; display: flex; flex-direction: column; gap: 20px; }
-  .about-img-box .big-text { font-family: 'Oswald', sans-serif; font-size: 56px; font-weight: 700; color: var(--white); line-height: 1; }
-  .about-img-box .big-text span { color: var(--green); }
-  .about-img-box p { color: rgba(255,255,255,0.6); font-size: 15px; line-height: 1.7; }
-  .about-tag { background: var(--red); color: var(--yellow); padding: 10px 18px; display: inline-block; font-family: 'Oswald', sans-serif; font-size: 13px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; border-radius: 4px; align-self: flex-start; }
-  .deals-list { display: flex; flex-direction: column; gap: 10px; margin-top: 10px; }
-  .deal-item { display: flex; align-items: center; gap: 10px; color: rgba(255,255,255,0.8); font-size: 14px; }
-  .deal-item::before { content: '▸'; color: var(--green); font-size: 16px; }
-  .about-content p { font-size: 15px; color: var(--grey); line-height: 1.8; margin-bottom: 20px; }
-  .features-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 28px; }
-  .feature-item { display: flex; align-items: flex-start; gap: 12px; padding: 16px; background: var(--light); border-radius: 8px; }
-  .feature-icon { color: var(--green); font-size: 22px; margin-top: 2px; }
-  .feature-text strong { font-size: 14px; font-weight: 600; display: block; margin-bottom: 2px; }
-  .feature-text span { font-size: 12px; color: var(--grey); }
-
-  .contact-section { background: var(--navy); padding: 80px 40px; }
-  .contact-inner { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 60px; }
-  .contact-info .section-title { color: var(--white); }
-  .contact-info p { color: rgba(255,255,255,0.65); font-size: 15px; line-height: 1.8; margin-bottom: 30px; }
-  .contact-cards { display: flex; flex-direction: column; gap: 14px; }
-  .contact-card { background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 20px; display: flex; align-items: center; gap: 14px; }
-  .contact-card-icon { width: 42px; height: 42px; border-radius: 8px; background: var(--green); display: flex; align-items: center; justify-content: center; font-size: 18px; flex-shrink: 0; }
-  .contact-card-text strong { color: var(--white); font-size: 15px; display: block; }
-  .contact-card-text span { color: rgba(255,255,255,0.55); font-size: 13px; }
-  .contact-form { background: var(--white); border-radius: 16px; padding: 36px; }
-  .contact-form h3 { font-family: 'Oswald', sans-serif; font-size: 24px; color: var(--navy); margin-bottom: 24px; }
-  .form-group { margin-bottom: 16px; }
-  .form-group label { display: block; font-size: 13px; font-weight: 600; color: var(--navy); margin-bottom: 6px; letter-spacing: 0.5px; }
-  .form-group input, .form-group select, .form-group textarea { width: 100%; padding: 12px 16px; border: 1.5px solid #e5e7eb; border-radius: 8px; font-family: 'Barlow', sans-serif; font-size: 14px; color: var(--navy); transition: border-color 0.2s, box-shadow 0.2s; background: var(--light); outline: none; }
-  .form-group input:focus, .form-group select:focus, .form-group textarea:focus { border-color: var(--green); box-shadow: 0 0 0 3px rgba(45,170,79,0.1); }
-  .form-group textarea { resize: vertical; min-height: 90px; }
-  .form-submit { width: 100%; background: var(--green); color: var(--white); border: none; padding: 14px; border-radius: 8px; cursor: pointer; font-family: 'Oswald', sans-serif; font-size: 16px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; transition: background 0.2s; }
-  .form-submit:hover { background: #25913f; }
-
-  footer { background: var(--dark); color: rgba(255,255,255,0.55); padding: 30px 40px; text-align: center; font-size: 13px; }
-  footer strong { color: var(--green); }
-
-  .wa-btn { position: fixed; bottom: 24px; right: 24px; z-index: 999; background: #25d366; color: white; padding: 14px 20px; border-radius: 50px; text-decoration: none; display: flex; align-items: center; gap: 10px; font-family: 'Barlow', sans-serif; font-size: 14px; font-weight: 600; box-shadow: 0 4px 20px rgba(37,211,102,0.4); animation: pulse 2s infinite; }
-  @keyframes pulse { 0%,100%{box-shadow:0 4px 20px rgba(37,211,102,0.4)} 50%{box-shadow:0 4px 30px rgba(37,211,102,0.7)} }
-  @keyframes fadeUp { from{opacity:0;transform:translateY(24px)} to{opacity:1;transform:translateY(0)} }
-  .max-w { max-width: 1100px; margin: 0 auto; }
-
-  @media(max-width:768px){
-    nav { padding: 0 20px; }
-    .nav-links { display: none; }
-    .hero-content { grid-template-columns: 1fr; gap: 40px; padding: 0 20px; }
-    .hero-right { grid-template-columns: 1fr 1fr; }
-    .about { grid-template-columns: 1fr; gap: 40px; padding: 60px 20px; }
-    .contact-inner { grid-template-columns: 1fr; }
-    .services { padding: 60px 20px; }
-    .phone-bar { gap: 20px; }
-    .phone-div { display: none; }
+  @media(max-width:768px) {
+    .topbar { display:none; }
+    nav { padding:0 20px; }
+    .nav-links { display:none; }
+    .services,.projects-section,.packages,.comparison,.about,.reviews,.contact-section { padding:60px 20px; }
+    .hero-content { padding:40px 20px; }
+    .stats-section { padding:50px 20px; }
+    .form-row { grid-template-columns:1fr; }
+    .phone-bar { gap:16px; padding:14px 20px; }
+    .phone-div { display:none; }
+    .about-badge,.about-badge2 { display:none; }
   }
 </style>
 </head>
 <body>
-
-<nav>
+ 
+<!-- TOPBAR -->
+<div class="topbar">
+  <span>📍 Kanpur, Uttar Pradesh &nbsp;|&nbsp; All Real Estate Solutions Under One Roof</span>
+  <div class="topbar-right">
+    <span>📞 <a href="tel:9369164030">9369164030</a></span>
+    <span>✉️ <a href="mailto:vastunexinfra@gmail.com">vastunexinfra@gmail.com</a></span>
+  </div>
+</div>
+ 
+<!-- NAV -->
+<nav id="navbar">
   <a class="logo" href="#">
     <div class="logo-icon">
       <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <polygon points="20,4 36,16 36,36 4,36 4,16" fill="none" stroke="#2daa4f" stroke-width="2.5"/>
-        <polygon points="20,8 32,18 32,32 8,32 8,18" fill="rgba(45,170,79,0.15)"/>
-        <rect x="15" y="22" width="10" height="14" fill="#2daa4f"/>
-        <rect x="16" y="14" width="8" height="7" fill="none" stroke="#f5c518" stroke-width="1.5"/>
+        <polygon points="20,4 36,16 36,36 4,36 4,16" fill="none" stroke="#F97316" stroke-width="2.5"/>
+        <polygon points="20,8 32,18 32,32 8,32 8,18" fill="rgba(249,115,22,0.18)"/>
+        <rect x="15" y="22" width="10" height="14" fill="#F97316"/>
+        <rect x="16" y="14" width="8" height="7" fill="none" stroke="#fff" stroke-width="1.5"/>
       </svg>
     </div>
     <div class="logo-text">
@@ -267,205 +426,512 @@
       <span>Building Dreams</span>
     </div>
   </a>
+ 
   <ul class="nav-links">
     <li><a href="#">Home</a></li>
-    <li><a href="#services">Services</a></li>
+ 
+    <!-- Services Dropdown -->
+    <li class="has-drop">
+      <a href="#services">Services <span class="arrow"></span></a>
+      <ul class="dropdown">
+        <li><a href="#services"><span class="di">🏠</span> Residential Construction</a></li>
+        <li><a href="#services"><span class="di">🏭</span> Industrial Projects</a></li>
+        <li><a href="#services"><span class="di">🏢</span> Commercial Plots</a></li>
+        <li><a href="#services"><span class="di">🏗️</span> Prefab Construction</a></li>
+        <li><a href="#services"><span class="di">🔩</span> Tin Shed Structures</a></li>
+      </ul>
+    </li>
+ 
+    <!-- Packages Dropdown -->
+    <li class="has-drop">
+      <a href="#packages">Packages <span class="arrow"></span></a>
+      <ul class="dropdown">
+        <li><a href="#packages"><span class="di">🏛️</span> Grey Structure &nbsp;<small style="color:var(--accent);font-size:11px;">₹1000–1400/sqft</small></a></li>
+        <li><a href="#packages"><span class="di">🏡</span> Comfort Package &nbsp;<small style="color:var(--accent);font-size:11px;">₹1600–2000/sqft</small></a></li>
+        <li><a href="#packages"><span class="di">👑</span> Standard Package &nbsp;<small style="color:var(--accent);font-size:11px;">₹2500–3000/sqft</small></a></li>
+        <li><a href="#packages"><span class="di">📊</span> Compare All Packages</a></li>
+      </ul>
+    </li>
+ 
+    <li><a href="#projects">Projects</a></li>
     <li><a href="#about">About</a></li>
+    <li><a href="#reviews">Reviews</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
-  <a href="tel:9369164030" class="nav-cta">📞 Call Now</a>
+ 
+  <a href="#contact" class="nav-cta">Book Appointment</a>
 </nav>
-
+ 
+<!-- HERO -->
 <section class="hero">
-  <div class="hero-pattern"></div>
   <div class="hero-bg"></div>
-  <div class="hero-accent"></div>
+  <div class="hero-overlay"></div>
   <div class="hero-content">
-    <div class="hero-left">
-      <div class="hero-badge">Kanpur, UP</div>
+    <div>
+      <div class="hero-eyebrow">📍 Kanpur, Uttar Pradesh</div>
       <h1 class="hero-title">Building Your<br><span>Dreams</span><br>Into Reality</h1>
       <p class="hero-tagline">All Real Estate Solutions Under One Roof</p>
       <div class="hero-banner">🏗️ Residential · Industrial · Commercial</div>
       <div class="hero-btns">
-        <a href="#contact" class="btn-primary">Get Free Quote →</a>
-        <a href="#services" class="btn-outline">Our Services</a>
+        <a href="#packages" class="btn-primary">View Packages →</a>
+        <a href="#contact" class="btn-outline">Get Free Quote</a>
       </div>
     </div>
-    <div class="hero-right">
-      <div class="stat-card">
-        <div class="stat-num">500<span>+</span></div>
-        <div class="stat-label">Projects Done</div>
+    <div class="hero-stats">
+      <div class="hstat">
+        <div class="hstat-num"><span class="counter" data-target="100">0</span><em>+</em></div>
+        <div class="hstat-label">Projects Done</div>
       </div>
-      <div class="stat-card">
-        <div class="stat-num">10<span>+</span></div>
-        <div class="stat-label">Years Experience</div>
+      <div class="hstat">
+        <div class="hstat-num"><span class="counter" data-target="10">0</span><em>+</em></div>
+        <div class="hstat-label">Years Experience</div>
       </div>
-      <div class="stat-card accent">
-        <div class="stat-num">🏆 Trusted Construction Partner</div>
-        <div class="stat-label">Civil · Prefab · Tin Shed · PT Structure</div>
+      <div class="hstat wide">
+        <div class="hstat-num">🏆 Trusted Construction Partner</div>
+        <div class="hstat-label">Civil · Prefab · Tin Shed </div>
       </div>
     </div>
   </div>
 </section>
-
+ 
+<!-- PHONE BAR -->
 <div class="phone-bar">
   <div class="phone-item">
-    <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
-    <span>9369164030</span>
+    <svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+    <a href="tel:9369164030">9369164030</a>
   </div>
   <div class="phone-div"></div>
   <div class="phone-item">
-    <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
-    <span>9235916795</span>
+    <svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+    <a href="tel:9235916795">9235916795</a>
   </div>
   <div class="phone-div"></div>
   <div class="phone-item">
-    <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
-    <span>9389874605</span>
+    <svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+    <a href="tel:9389874605">9389874605</a>
   </div>
 </div>
-
+ 
+<!-- IMAGE STRIP -->
+<div class="gallery-strip">
+  <div class="gallery-track">
+    <img class="gallery-img" src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=400&q=75" alt="Construction">
+    <img class="gallery-img" src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=400&q=75" alt="Building">
+    <img class="gallery-img" src="https://images.unsplash.com/photo-1590486803833-1c5dc8ddd4c8?w=400&q=75" alt="Architecture">
+    <img class="gallery-img" src="https://images.unsplash.com/photo-1565008447742-97f6f38c985c?w=400&q=75" alt="Foundation">
+    <img class="gallery-img" src="https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=400&q=75" alt="Interior">
+    <img class="gallery-img" src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=75" alt="House">
+    <img class="gallery-img" src="https://images.unsplash.com/photo-1613977257363-707ba9348227?w=400&q=75" alt="Modern">
+    <img class="gallery-img" src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=400&q=75" alt="Construction">
+    <img class="gallery-img" src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=400&q=75" alt="Building">
+    <img class="gallery-img" src="https://images.unsplash.com/photo-1590486803833-1c5dc8ddd4c8?w=400&q=75" alt="Architecture">
+    <img class="gallery-img" src="https://images.unsplash.com/photo-1565008447742-97f6f38c985c?w=400&q=75" alt="Foundation">
+    <img class="gallery-img" src="https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=400&q=75" alt="Interior">
+    <img class="gallery-img" src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=75" alt="House">
+    <img class="gallery-img" src="https://images.unsplash.com/photo-1613977257363-707ba9348227?w=400&q=75" alt="Modern">
+  </div>
+</div>
+ 
+<!-- SERVICES -->
 <section class="services" id="services">
   <div class="max-w">
-    <div class="section-label">What We Build</div>
-    <h2 class="section-title">Our <span>Services</span></h2>
-    <p class="section-sub">Comprehensive construction and real estate solutions tailored to your needs.</p>
+    <div class="section-label reveal">What We Build</div>
+    <h2 class="section-title reveal">Our <span>Services</span></h2>
+    <p class="section-sub reveal">Comprehensive construction and real estate solutions tailored to your needs in Kanpur, UP.</p>
     <div class="services-grid">
-      <div class="service-card">
-        <div class="svc-icon">🏠</div>
-        <div class="svc-title">Residential Construction</div>
-        <div class="svc-desc">Custom homes and residential plots built with precision, quality materials, and modern design standards.</div>
+      <div class="service-card reveal d1"><div class="svc-icon">🏠</div><div class="svc-title">Residential Construction</div><div class="svc-desc">Custom homes built with precision, quality materials, and modern design standards.</div></div>
+      <div class="service-card reveal d2"><div class="svc-icon">🏭</div><div class="svc-title">Industrial Projects</div><div class="svc-desc">Factories, warehouses, and industrial facilities designed for efficiency and durability.</div></div>
+      <div class="service-card reveal d3"><div class="svc-icon">🏢</div><div class="svc-title">Commercial Plots</div><div class="svc-desc">Prime commercial space development in strategic locations across Kanpur and UP.</div></div>
+      <div class="service-card reveal d1"><div class="svc-icon">🏗️</div><div class="svc-title">Prefab Construction</div><div class="svc-desc">Fast, cost-effective prefabricated structures without compromising on quality.</div></div>
+      <div class="service-card reveal d2"><div class="svc-icon">🔩</div><div class="svc-title">Tin Shed Structures</div><div class="svc-desc">Durable tin shed solutions for industrial storage, farming and temporary setups.</div></div>
+    </div>
+  </div>
+</section>
+ 
+<!-- PROJECT GALLERY -->
+<section class="projects-section" id="projects">
+  <div class="max-w">
+    <div class="section-label reveal">Our Work</div>
+    <h2 class="section-title reveal">Construction <span>Gallery</span></h2>
+    <p class="section-sub reveal">Real projects, real quality — built by Vastunex Infra across Kanpur, Unnao, and Lucknow.</p>
+    <div class="projects-grid">
+      <div class="proj-item big reveal-left">
+        <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=800&q=80" alt="Project" style="height:460px;">
+        <div class="proj-overlay"><div><div class="proj-accent">Featured</div><div class="proj-label">Residential Complex, Kanpur</div></div></div>
       </div>
-      <div class="service-card">
-        <div class="svc-icon">🏭</div>
-        <div class="svc-title">Industrial Projects</div>
-        <div class="svc-desc">Factories, warehouses, and industrial facilities designed for efficiency, safety, and long-term durability.</div>
+      <div class="proj-item reveal-right d1">
+        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=500&q=80" alt="Project" style="height:220px;">
+        <div class="proj-overlay"><div><div class="proj-accent">Completed</div><div class="proj-label">Modern Home</div></div></div>
       </div>
-      <div class="service-card">
-        <div class="svc-icon">🏢</div>
-        <div class="svc-title">Commercial Plots</div>
-        <div class="svc-desc">Prime commercial and retail space development in strategic locations across Prayagraj and beyond.</div>
+      <div class="proj-item reveal-right d2">
+        <img src="https://images.unsplash.com/photo-1613977257363-707ba9348227?w=500&q=80" alt="Project" style="height:220px;">
+        <div class="proj-overlay"><div><div class="proj-accent">Premium</div><div class="proj-label">Interior Finish</div></div></div>
       </div>
-      <div class="service-card">
-        <div class="svc-icon">🏗️</div>
-        <div class="svc-title">Prefab Construction</div>
-        <div class="svc-desc">Fast and cost-effective prefabricated structures — quicker delivery without compromising on quality.</div>
+    </div>
+  </div>
+</section>
+ 
+<!-- STATS -->
+<section class="stats-section">
+  <div class="stats-inner">
+    <div class="stat-box reveal d1"><div class="num"><span class="counter" data-target="100">0</span><em>+</em></div><div class="lbl">Projects Completed</div></div>
+    <div class="stat-box reveal d2"><div class="num"><span class="counter" data-target="10">0</span><em>+</em></div><div class="lbl">Years Experience</div></div>
+    <div class="stat-box reveal d3"><div class="num"><span class="counter" data-target="100">0</span><em>+</em></div><div class="lbl">Happy Clients</div></div>
+    <div class="stat-box reveal d4"><div class="num"><span class="counter" data-target="3">0</span></div><div class="lbl">Package Options</div></div>
+  </div>
+</section>
+ 
+<!-- PACKAGES -->
+<section class="packages" id="packages">
+  <div class="packages-intro max-w">
+    <div class="section-label reveal">Transparent Pricing</div>
+    <h2 class="section-title reveal">Construction <span>Packages</span></h2>
+    <p class="section-sub reveal">Choose the package that fits your budget. All packages use quality materials with full transparency.</p>
+  </div>
+  <div class="pkg-grid">
+    <div class="pkg-card reveal d1">
+      <div class="pkg-header">
+        <div class="pkg-icon">🏛️</div>
+        <div class="pkg-name">Grey Structure</div>
+        <div class="pkg-tagline">Structural shell only</div>
+        <div class="pkg-price">₹1000–1400 <em>/ sq ft</em></div>
       </div>
-      <div class="service-card">
-        <div class="svc-icon">🔩</div>
-        <div class="svc-title">Tin Shed Structures</div>
-        <div class="svc-desc">Durable and affordable tin shed solutions for industrial storage, farming, and temporary setups.</div>
+      <div class="pkg-body">
+        <div class="pkg-summary">Only the structural skeleton — ideal to finish interiors yourself or in phases.</div>
+        <div class="pkg-section-title">Site Preparation</div>
+        <ul class="pkg-list"><li>Site clearing & layout marking</li><li>Excavation</li></ul>
+        <div class="pkg-section-title">Foundation & RCC</div>
+        <ul class="pkg-list"><li>PCC, Footings & Foundation beams</li><li>Columns, Beams, Lintels</li><li>Roof slab & Staircase RCC</li></ul>
+        <div class="pkg-section-title">Masonry & Plaster</div>
+        <ul class="pkg-list"><li>Brick/block work & Boundary wall</li><li>Internal & External plaster</li></ul>
+        <div class="pkg-section-title">Base Work</div>
+        <ul class="pkg-list"><li>Concealed pipelines, Water & Drainage</li><li>Electrical conduits & switch boxes</li><li>Septic tank, Parapet wall, Chajja</li></ul>
+        <div class="pkg-section-title">Not Included</div>
+        <ul class="pkg-list excluded"><li>Flooring, Doors & Windows</li><li>Painting, Kitchen, Bathrooms</li></ul>
       </div>
-      <div class="service-card">
-        <div class="svc-icon">⚙️</div>
-        <div class="svc-title">PT Structure</div>
-        <div class="svc-desc">Post-tensioned concrete structures offering superior strength, reduced material use, and longer spans.</div>
+      <div class="pkg-footer"><a href="#contact" class="pkg-cta">Get This Quote</a></div>
+    </div>
+ 
+    <div class="pkg-card featured reveal d2">
+      <div class="pkg-badge">Most Popular</div>
+      <div class="pkg-header">
+        <div class="pkg-icon">🏡</div>
+        <div class="pkg-name">Comfort Package</div>
+        <div class="pkg-tagline">Ready-to-move basic finish</div>
+        <div class="pkg-price">₹1600–2000 <em>/ sq ft</em></div>
+      </div>
+      <div class="pkg-body">
+        <div class="pkg-summary">Everything in Grey Structure + complete finishing. A fully functional ready-to-move home.</div>
+        <div class="pkg-section-title">Flooring</div>
+        <ul class="pkg-list"><li>Vitrified flooring & Skirting</li><li>Bathroom anti-skid tiles</li><li>Staircase finishing</li><li>Termite Treatment and Water Proofing</li></ul>
+        <div class="pkg-section-title">Plumbing & Electrical</div>
+        <ul class="pkg-list"><li>Complete plumbing — bathroom & kitchen</li><li>Internal wiring, Switches & Sockets</li><li>Distribution board & Fan/light points</li></ul>
+        <div class="pkg-section-title">Kitchen & Bathrooms</div>
+        <ul class="pkg-list"><li>Semi-modular kitchen, Granite top, SS sink, Wooden work</li><li>Wall & floor tiles, Wash basin, WC</li><li>CP & Shower fittings</li></ul>
+        <div class="pkg-section-title">Doors, Windows & Finishing</div>
+        <ul class="pkg-list"><li>Main door, Flush doors, uPVC windows</li><li>Interior & Exterior paint</li><li>Terrace & Bathroom waterproofing</li><li>False Ceiling</li></ul>
+      </div>
+      <div class="pkg-footer"><a href="#contact" class="pkg-cta">Get This Quote</a></div>
+    </div>
+ 
+    <div class="pkg-card reveal d3">
+      <div class="pkg-header">
+        <div class="pkg-icon">👑</div>
+        <div class="pkg-name">Standard Package</div>
+        <div class="pkg-tagline">Premium modern finish home</div>
+        <div class="pkg-price">₹2500–3000 <em>/ sq ft</em></div>
+      </div>
+      <div class="pkg-body">
+        <div class="pkg-summary">Comfort Package + premium finishes, false ceiling, designer bathrooms & smart home provisions.</div>
+        <div class="pkg-section-title">Premium Upgrades</div>
+        <ul class="pkg-list"><li>Designer/vitrified premium floor tiles</li><li>False ceiling (POP/Gypsum) + cove lighting</li><li>Designer bathroom, wall-mounted WC</li></ul>
+        <div class="pkg-section-title">Premium Electrical</div>
+        <ul class="pkg-list"><li>Modular switches, MCB & DB</li><li>AC, TV, Refrigerator & Geyser points</li><li>Inverter wiring & decorative lighting</li></ul>
+        <div class="pkg-section-title">Smart Home</div>
+        <ul class="pkg-list"><li>CCTV wiring provision</li><li>WiFi routing provision</li><li>Video doorbell provision</li></ul>
+        <div class="pkg-section-title">Elevation & More</div>
+        <ul class="pkg-list"><li>Modern front elevation, Texture paint</li><li>SS staircase & balcony railing</li><li>Toughened glass in selected areas</li></ul>
+      </div>
+      <div class="pkg-footer"><a href="#contact" class="pkg-cta">Get This Quote</a></div>
+    </div>
+  </div>
+</section>
+ 
+<!-- COMPARISON TABLE -->
+<section class="comparison">
+  <div class="max-w">
+    <div class="section-label reveal">Side by Side</div>
+    <h2 class="section-title reveal">Package <span>Comparison</span></h2>
+    <p class="section-sub reveal" style="margin-bottom:28px;">See exactly what's included in each package.</p>
+    <div class="comparison-table-wrap reveal">
+      <table>
+        <thead><tr><th>Feature</th><th>Grey Structure</th><th>Comfort</th><th>Standard</th></tr></thead>
+        <tbody>
+          <tr><td>RCC Structure</td><td><span class="yes">✓</span></td><td><span class="yes">✓</span></td><td><span class="yes">✓</span></td></tr>
+          <tr><td>Flooring</td><td><span class="no">✗</span></td><td><span class="partial">Standard Vitrified</span></td><td><span class="partial">Premium Designer</span></td></tr>
+          <tr><td>Plumbing</td><td><span class="partial">Base only</span></td><td><span class="partial">Complete</span></td><td><span class="partial">Premium CPVC</span></td></tr>
+          <tr><td>Electrical</td><td><span class="partial">Conduits only</span></td><td><span class="partial">Complete</span></td><td><span class="partial">Premium Modular</span></td></tr>
+          <tr><td>Kitchen</td><td><span class="no">✗</span></td><td><span class="partial">Semi-modular</span></td><td><span class="partial">Upgraded</span></td></tr>
+          <tr><td>Bathrooms</td><td><span class="no">✗</span></td><td><span class="partial">Standard</span></td><td><span class="partial">Designer</span></td></tr>
+          <tr><td>Furniture</td><td><span class="no">✗</span></td><td><span class="no">✗</span></td><td><span class="yes">Premium</span></td></tr>
+          <tr><td>False Ceiling</td><td><span class="no">✗</span></td><td><span class="partial">Basic</span></td><td><span class="yes">Premium</span></td></tr>
+          <tr><td>Smart Provisions</td><td><span class="no">✗</span></td><td><span class="no">✗</span></td><td><span class="yes">✓</span></td></tr>
+          <tr><td>Modern Elevation</td><td><span class="no">✗</span></td><td><span class="partial">Basic</span></td><td><span class="yes">Premium</span></td></tr>
+          <tr><td>SS Railings</td><td><span class="no">✗</span></td><td><span class="partial">Basic</span></td><td><span class="yes">Premium</span></td></tr>
+          <tr><td>Ready to Move</td><td><span class="no">✗</span></td><td><span class="yes">✓</span></td><td><span class="yes">✓</span></td></tr>
+          <tr><td style="color:var(--accent);font-weight:700">Price / sq ft</td><td><span class="partial">₹1000–1400</span></td><td><span class="partial">₹1600–2000</span></td><td><span class="partial">₹2500–3000</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+ 
+<!-- CAMERA TRUST SECTION -->
+<section class="camera-section">
+  <div class="camera-inner max-w">
+    <div class="camera-left reveal-left">
+      <div class="cam-icon-wrap">
+        <div class="cam-pulse-ring"></div>
+        <div class="cam-pulse-ring delay"></div>
+        <div class="cam-icon">📷</div>
+      </div>
+    </div>
+    <div class="camera-right reveal-right">
+      <div class="cam-eyebrow">🔒 Transparency You Can Trust</div>
+      <h2 class="cam-title">Live Camera <span>Access</span><br>On Your Site — Always</h2>
+      <p class="cam-desc">We install <strong>CCTV cameras on your construction site</strong> so you can monitor every single detail of the work — anytime, from anywhere. Whether you're in the same city or across the country, you never miss a moment.</p>
+      <div class="cam-features">
+        <div class="cam-feat">
+          <div class="cam-feat-icon">📱</div>
+          <div class="cam-feat-text">
+            <strong>Watch on Your Phone</strong>
+            <span>Access the live feed directly from your smartphone, 24×7</span>
+          </div>
+        </div>
+        <div class="cam-feat">
+          <div class="cam-feat-icon">🏗️</div>
+          <div class="cam-feat-text">
+            <strong>Full Site Visibility</strong>
+            <span>Multiple camera angles covering the entire construction area</span>
+          </div>
+        </div>
+        <div class="cam-feat">
+          <div class="cam-feat-icon">🤝</div>
+          <div class="cam-feat-text">
+            <strong>Zero Doubt, Full Trust</strong>
+            <span>Know exactly what work is happening — no surprises, no delays hidden</span>
+          </div>
+        </div>
+        <div class="cam-feat">
+          <div class="cam-feat-icon">🔐</div>
+          <div class="cam-feat-text">
+            <strong>Private & Secure</strong>
+            <span>Your camera access is exclusive — only you and your team can view it</span>
+          </div>
+        </div>
+      </div>
+      <div class="cam-badge-row">
+        <div class="cam-badge">✅ Included in All Packages</div>
+        <div class="cam-badge accent">📡 Live 24×7 Monitoring</div>
       </div>
     </div>
   </div>
 </section>
 
-<section id="about">
-  <div class="about">
-    <div class="about-visual">
-      <div class="about-img-box">
-        <div class="big-text"><span>VASTU</span>NEX<br>INFRA</div>
-        <div class="about-tag">All Real Estate Solution Under One Roof</div>
-        <p>Your trusted construction partner in Kanpur, Uttar Pradesh. We handle every aspect of your build — from foundation to finishing.</p>
-        <div class="deals-list">
-          <div class="deal-item">Residential / Industrial / Commercial Plots</div>
-          <div class="deal-item">Civil Construction · House · Factory</div>
-          <div class="deal-item">Prefab · Tin Shed · PT Structure</div>
-        </div>
-      </div>
+<!-- ABOUT -->
+<section class="about" id="about">
+  <div class="about-inner">
+    <div class="about-img-wrap reveal-left">
+      <img class="about-main-img" src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=700&q=80" alt="Construction workers">
+      <div class="about-badge"><div class="num">100+</div><div class="lbl">Projects Done</div></div>
+      <div class="about-badge2"><div class="num">10+</div><div class="lbl">Years Active</div></div>
     </div>
-    <div class="about-content">
+    <div class="about-content reveal-right">
+      <div class="about-tag">All Real Estate Solution Under One Roof</div>
       <div class="section-label">About Us</div>
       <h2 class="section-title">Why Choose<br><span>Vastunex Infra?</span></h2>
-      <p>We are a leading construction and real estate firm based in Kanpur, Uttar Pradesh. With years of hands-on experience, we deliver projects on time, within budget, and built to last.</p>
-      <p>Whether you're building your dream home, setting up an industrial facility, or investing in a commercial plot — we have the expertise and team to make it happen.</p>
+      <p>We are a leading construction and real estate firm based in <strong>Kanpur, Uttar Pradesh</strong>. With over 10 years of hands-on experience, we deliver projects on time, within budget, and built to last.</p>
+      <p>Whether you're building your dream home, setting up an industrial facility, or investing in a commercial plot — we have the expertise to make it happen.</p>
       <div class="features-grid">
-        <div class="feature-item">
-          <span class="feature-icon">✅</span>
-          <div class="feature-text"><strong>Quality Assured</strong><span>Premium materials, zero compromise</span></div>
-        </div>
-        <div class="feature-item">
-          <span class="feature-icon">⏱️</span>
-          <div class="feature-text"><strong>On-Time Delivery</strong><span>We respect your timeline</span></div>
-        </div>
-        <div class="feature-item">
-          <span class="feature-icon">💰</span>
-          <div class="feature-text"><strong>Best Pricing</strong><span>Transparent & competitive rates</span></div>
-        </div>
-        <div class="feature-item">
-          <span class="feature-icon">🤝</span>
-          <div class="feature-text"><strong>Trusted by 500+</strong><span>Happy clients across UP</span></div>
-        </div>
+        <div class="feature-item"><span class="feature-icon">✅</span><div class="feature-text"><strong>Quality Assured</strong><span>Premium materials, zero compromise</span></div></div>
+        <div class="feature-item"><span class="feature-icon">⏱️</span><div class="feature-text"><strong>On-Time Delivery</strong><span>We respect your timeline</span></div></div>
+        <div class="feature-item"><span class="feature-icon">💰</span><div class="feature-text"><strong>Best Pricing</strong><span>Transparent & competitive rates</span></div></div>
+        <div class="feature-item"><span class="feature-icon">🤝</span><div class="feature-text"><strong>Trusted by 500+</strong><span>Happy clients across UP</span></div></div>
       </div>
     </div>
   </div>
 </section>
-
+ 
+<!-- REVIEWS -->
+<section class="reviews" id="reviews">
+  <div class="max-w">
+    <div class="section-label reveal">What Clients Say</div>
+    <h2 class="section-title reveal">Customer <span>Feedback</span></h2>
+    <p class="section-sub reveal">Real feedback from our customers regarding our services and projects reviewed on google.</p>
+    <div class="reviews-grid">
+      <div class="review-card reveal d1">
+        <div class="review-img-wrap">
+          <img src="https://placehold.co/400x200/fff7ed/F97316?text=Google+Review+Screenshot" alt="Review">
+          <div class="review-google-badge"><svg width="12" height="12" viewBox="0 0 24 24"><path fill="#4285f4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34a853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#fbbc05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path fill="#ea4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>Google Review</div>
+        </div>
+        <div class="review-body"><div class="review-stars">★★★★★</div><div class="review-name">Your Customer</div><div class="review-text">Upload real Google review screenshots using the button below.</div></div>
+      </div>
+      <div class="review-card reveal d2">
+        <div class="review-img-wrap">
+          <img src="https://placehold.co/400x200/f3f4f6/374151?text=Google+Review+Screenshot" alt="Review">
+          <div class="review-google-badge"><svg width="12" height="12" viewBox="0 0 24 24"><path fill="#4285f4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34a853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#fbbc05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path fill="#ea4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>Google Review</div>
+        </div>
+        <div class="review-body"><div class="review-stars">★★★★★</div><div class="review-name">Your Customer</div><div class="review-text">Replace placeholders with actual screenshots from your Google Business page.</div></div>
+      </div>
+      <label class="review-upload-card reveal d3">
+        <input type="file" id="review-upload" accept="image/*" multiple>
+        <div class="upload-icon">📸</div>
+        <p><strong>Upload Google Review Screenshots</strong><br>Click to add customer review images.<br><small>JPG · PNG · WEBP supported</small></p>
+      </label>
+    </div>
+    <div id="preview-container"></div>
+  </div>
+</section>
+ 
+<!-- CONTACT -->
 <section class="contact-section" id="contact">
   <div class="contact-inner">
-    <div class="contact-info">
+    <div class="contact-info reveal-left">
       <div class="section-label">Get In Touch</div>
       <h2 class="section-title">Start Your<br><span>Project Today</span></h2>
-      <p>Ready to build? Contact us for a free consultation and quote. Our experts are ready to help you at every step.</p>
+      <p>Ready to build in Kanpur? Contact us for a free consultation and quote. Our experts are ready to help at every step.</p>
       <div class="contact-cards">
-        <div class="contact-card">
-          <div class="contact-card-icon">📞</div>
-          <div class="contact-card-text"><strong>9369164030</strong><span>Primary Contact</span></div>
-        </div>
-        <div class="contact-card">
-          <div class="contact-card-icon">📱</div>
-          <div class="contact-card-text"><strong>9235916795 · 9389874605</strong><span>Alternate Numbers</span></div>
-        </div>
-        <div class="contact-card">
-          <div class="contact-card-icon">📍</div>
-          <div class="contact-card-text"><strong>Kanpur, Uttar Pradesh</strong><span>Serving all of UP & beyond</span></div>
-        </div>
+        <div class="contact-card"><div class="contact-card-icon">📞</div><div class="contact-card-text"><strong>9369164030</strong><span>Primary Contact</span></div></div>
+        <div class="contact-card"><div class="contact-card-icon">📱</div><div class="contact-card-text"><strong>9235916795 · 9389874605</strong><span>Alternate Numbers</span></div></div>
+        <div class="contact-card"><div class="contact-card-icon">📍</div><div class="contact-card-text"><strong>Kanpur, Uttar Pradesh</strong><span>Serving Kanpur, Unnao, Lucknow</span></div></div>
       </div>
     </div>
-    <div class="contact-form">
-      <h3>Request a Free Quote</h3>
+    <div class="contact-form reveal-right">
+  <h3>Request a Free Quote</h3>
+  <form action="https://formsubmit.co/vastunexinfra@gmail.com" method="POST">
+    <!-- Hidden Settings -->
+    <input type="hidden" name="_subject" value="🏗 New Booking - Vastunex Infra!">
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_template" value="table">
+
+    <div class="form-row">
       <div class="form-group">
         <label>Your Name</label>
-        <input type="text" placeholder="Enter your full name">
+        <input type="text" name="Full Name" placeholder="Full name">
       </div>
       <div class="form-group">
         <label>Phone Number</label>
-        <input type="tel" placeholder="+91 XXXXX XXXXX">
+        <input type="tel" name="Phone Number" placeholder="+91 XXXXX XXXXX">
       </div>
-      <div class="form-group">
-        <label>Service Required</label>
-        <select>
-          <option>Select a service...</option>
-          <option>Residential Construction</option>
-          <option>Industrial Project</option>
-          <option>Commercial Plot</option>
-          <option>Prefab Construction</option>
-          <option>Tin Shed</option>
-          <option>PT Structure</option>
-        </select>
-      </div>
-      <div class="form-group">
-        <label>Your Requirements</label>
-        <textarea placeholder="Tell us about your project..."></textarea>
-      </div>
-      <button class="form-submit">Submit Enquiry</button>
     </div>
-  </div>
+
+    <div class="form-group">
+      <label>Package Interested In</label>
+      <select name="Package Interested">
+        <option>Select a package...</option>
+        <option>Grey Structure (₹1000–1400/sq ft)</option>
+        <option>Comfort Package (₹1600–2000/sq ft)</option>
+        <option>Standard Package (₹2500–3000/sq ft)</option>
+        <option>Not Sure / Need Advice</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label>Plot Area (sq ft)</label>
+      <input type="text" name="Plot Area" placeholder="e.g. 1200 sq ft">
+    </div>
+
+    <div class="form-group">
+      <label>Your Requirements</label>
+      <textarea name="Requirements" placeholder="Tell us about your project..."></textarea>
+    </div>
+
+    <button type="submit" class="form-submit">Book Appointment →</button>
+    </form>
+   </div>
+ </div>
 </section>
-
+ 
 <footer>
-  <p>© 2026 <strong>Vastunex Infra</strong> — Building Dreams | All Real Estate Solution Under One Roof | Kanpur, UP</p>
+  <p>© 2026 <strong>Vastunex Infra</strong> — Building Dreams | All Real Estate Solution Under One Roof | Kanpur, Uttar Pradesh</p>
 </footer>
-
+ 
 <a href="https://wa.me/919369164030" class="wa-btn" target="_blank">
   <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
   How can I help you?
 </a>
+ 
+  <!-- ✅ Schema Markup -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Vastunex Infra",
+    "description": "Affordable home construction services in Kanpur, Unnao and Lucknow, Uttar Pradesh",
+    "url": "https://vastunexinfra.com",
+    "telephone": "+91-9369164030",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "12/74 Mishra Colony",
+      "addressLocality": "Kanpur",
+      "addressRegion": "Uttar Pradesh",
+      "postalCode": "209861",
+      "addressCountry": "IN"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 26.4499,
+      "longitude": 80.3319
+    },
+    "areaServed": [
+      { "@type": "City", "name": "Kanpur" },
+      { "@type": "City", "name": "Unnao" },
+      { "@type": "City", "name": "Lucknow" }
+    ],
+    "openingHours": "Mo-Su 00:00-23:59",
+    "priceRange": "₹₹"
+  }
+  </script>
 
+<script>
+  // SCROLL REVEAL
+  const obs = new IntersectionObserver(entries => {
+    entries.forEach(e => { if(e.isIntersecting) e.target.classList.add('active'); });
+  }, {threshold:0.1});
+  document.querySelectorAll('.reveal,.reveal-left,.reveal-right').forEach(el => obs.observe(el));
+ 
+  // COUNTER
+  const cObs = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if(!entry.isIntersecting) return;
+      const el = entry.target, target = +el.dataset.target, dur = 1800, step = target/(dur/16);
+      let cur = 0;
+      const t = setInterval(() => { cur += step; if(cur >= target){el.textContent=target;clearInterval(t);}else{el.textContent=Math.floor(cur);} }, 16);
+      cObs.unobserve(el);
+    });
+  }, {threshold:0.5});
+  document.querySelectorAll('.counter').forEach(c => cObs.observe(c));
+ 
+  // REVIEW UPLOAD
+  document.getElementById('review-upload').addEventListener('change', function(e) {
+    const container = document.getElementById('preview-container');
+    Array.from(e.target.files).forEach(file => {
+      const reader = new FileReader();
+      reader.onload = ev => {
+        const card = document.createElement('div');
+        card.className = 'preview-card';
+        card.innerHTML = `<img src="${ev.target.result}" alt="Review"><div style="padding:12px 14px;display:flex;align-items:center;gap:8px;"><span style="color:#fbbc04;font-size:14px;">★★★★★</span><span style="font-size:12px;color:#6b7280;">Google Review</span></div><button class="remove-btn" onclick="this.parentElement.remove()">✕</button>`;
+        container.appendChild(card);
+      };
+      reader.readAsDataURL(file);
+    });
+  });
+ 
+  // NAV SHADOW
+  window.addEventListener('scroll', () => {
+    document.getElementById('navbar').style.boxShadow = window.scrollY > 40 ? '0 4px 30px rgba(31,41,55,0.14)' : '0 2px 16px rgba(0,0,0,0.09)';
+  });
+</script>
 </body>
 </html>
+ 
