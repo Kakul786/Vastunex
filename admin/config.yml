@@ -1,0 +1,16 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "reviews"
+public_folder: "/reviews"
+
+collections:
+  - name: "reviews"
+    label: "Google Reviews"
+    folder: "reviews"
+    create: true
+    fields:
+      - {label: "Customer Name", name: "name", widget: "string"}
+      - {label: "Review Screenshot", name: "image", widget: "image"}
+      - {label: "Rating", name: "rating", widget: "number", min: 1, max: 5}
